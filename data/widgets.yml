@@ -1,0 +1,7 @@
+widgets:
+    - name: Weather [MOW]
+      text: |-
+        20℃
+        Sunny
+    - name: Notifications
+      text: You've got 3 unread messages

@@ -1,5 +1,17 @@
 {% extends "_base.html" %}
 
 {% block content %}
-    <h1>Hello world!</h1>
+    <div class="row">
+        {% for widget in widgets %}
+            {% set txt = widget.text.split("\n") %}
+            <section class="col col-sm-12 col-md-4">
+                <header>
+                    <h1 class="h3">{{ widget.name }}</h1>
+                </header>
+                {% for line in txt %}
+                    <p>{{ line }}</p>
+                {% endfor %}
+            </section>
+        {% endfor %}
+    </div>
 {% endblock %}
